@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <title>Beyond deterministic translation for unsupervised domain adaptation</title>
+</head>
+
+<body>
+  <div id="tlayout">
+    <div id="layout-content">
+      <div id="toptitle">
+        <h1>Beyond deterministic translation for unsupervised domain adaptation</h1>
+      </div>
+      <table align=center width=600px>
+          <tr>
+            <td align=center width=100px>
+            <center>
+              <span style="font-size:24px">Eleni Chiou</span>
+              </center>
+              </td>
+            <td align=center width=200px>
+            <center>
+              <span style="font-size:24px">Iasonas Kokkinos</span>
+              </center>
+              </td>
+            <td align=center width=200px>
+            <center>
+              <span style="font-size:24px">Eleftheria Panagiotaki</span>
+              </center>
+            </td>
+          </tr>
+      </table>
+
+      <table align=center width=600px>
+       <tr>
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:20px">University College London</span>
+        </center>
+        </td>
+     </tr>
+    </table>
+    <br>
+    <table align=center width=400px>
+      <tr>
+           <td align=center width=100px>
+           <center>
+           <span style="font-size:20px"><a href="../Files/uda_sem_seg.pdf">Paper</a></span>
+           </center>
+           </td>
+
+           <td align=center width=100px>
+            <center>
+            <span style="font-size:20px"><a href="../Files/uda_sem_seg_suppl_mat.pdf">Supplementary</a></span>
+            </center>
+            </td>
+
+          <td align=center width=100px>
+          <center>
+          <span style="font-size:20px">Code</span>
+          </center>
+          </td>
+       </tr>
+      </table>
+      <br>
+         <br>
+         <table align=center width=800px>
+             <tr>
+                 <td width=800px>
+                   <center>
+                       <a href="../Pics/stoch_transl.png"><img src = "../Pics/stoch_transl.png" height="300px"></img></href></a><br>
+                 </center>
+                 </td>
+             </tr>
+                 <td width=800px>
+                   <center>
+                       <span style="font-size:14px">  Unsupervised Domain Adaptation with stochastic translation:  we rely on a content-style separation network toassociate a synthetic image from the (source) GTA5 dataset with a distribution of image translations to the target domain.These translations preserve the content signal but drop the source-specific styleSsand instead adopt the appearance propertiesof the (target) Cityscapes dataset through randomly sampled style codes, St.  We use the resulting images to train a target-domain network tasked with predicting the labels of the respective source-domain image, irrespective of the style variation. Stochasticity in UDA allows the translation networks to generate multiple, sharp outputs that better capture the diversity ofthe scenes in the target domain, and train the target-domain network with a more representative set of images.
+                 </center>
+                 </td>
+             </tr>
+         </table>
+
+         <table align=center width=800px>  <br><br>
+        <center><h1>Abstract</h1></center>
+        <tr>
+          <td align=justify>
+            In this work we challenge the common approach of un-supervised domain adaptation (UDA) that relates a super-vised  source  and  unsupervised  target  domain  through  aone-to-one  mapping  (‘translation’)  between  the  domains.Instead,  we  rely  on  stochastic  translation  to  capture  am-biguities that may be inherent in the relationship betweenthe two domains. This allows us to train more accurate tar-get networks by generating multiple outputs conditioned onthe same source image, reaping the benefits of both accuratetranslation and data augmentation for appearance variabil-ity. Additionally, it allows us to impute robust pseudolabelsfor the target data by averaging the predictions of a sourcenetwork on multiple translated versions of a single targetimage.  Finally, it provides us with a simple mechanism totrain and ensemble diverse networks in the target domain by modulating the degree of stochasticity in the translations.We show that our contributions yield improvements overstrong  recent  baselines,  leading  to  state-of-the-art  UDAresults  on  two  challenging  semantic  segmentation  bench-marks.   We will make our code and experimental settingspublicly available upon acceptance of this work.
+      </td>
+        </tr>
+    </table>
+      <br><br>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
