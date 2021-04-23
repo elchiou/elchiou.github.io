@@ -30,8 +30,22 @@ div.column {
   width: 33.33%;
 }
 
+div.column-five-first {
+  float: left;
+  width: 15%;
+}
+
+div.column-five-third {
+  float: left;
+  width: 15%;
+}
+
+div.column-five {
+  float: left;
+  width: 22.5%;
+}
 div.row {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   }
 
@@ -71,7 +85,6 @@ font-size: 120%;
 font-weight:normal;
 }
 
-
 h3 {
 text-align: left;
 font-size: 125%;
@@ -79,8 +92,15 @@ font-weight: normal;
 border-bottom-color: rgba(240,240,240,1);
 border-bottom-style: solid;
 border-bottom-width: 4px;
-
 }
+
+h4{
+font-size: 110%;
+font-weight:normal;
+margin-bottom: 0.1em;
+margin-top: 2em;
+}
+
 div#toptitle h1 {
 margin-bottom: 0.0em;
 padding-bottom: 0.1em;
@@ -101,6 +121,15 @@ a:hover {
 
 div.img{
 margin-top: 3em;
+width: 600px;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+div.img-method-results{
+margin-top: 1em;
+margin-bottom: 2em;
 width: 800px;
 max-width: 800px;
 margin-left: auto;
@@ -120,9 +149,18 @@ text-align: justify;
 margin-top: 0.5em;
 }
 
-textarea.bibtex{
-width: 90%;
-margin: 0 auto;
-height: 130px;
-font-size: 16px;
+
+p.citation {
+margin-right: 15px;
+margin-left: 15px;
+background-color: #e6e6e6;
+font-family: 'Open Sans',sans-serif;
+font-size: 14px;
+margin-top: 28px;
+margin-bottom: 17px;
+padding-right: 25px;
+padding-left: 25px;
+line-height: 22px;
+font-weight: 300;
+text-align: justify;
 }
