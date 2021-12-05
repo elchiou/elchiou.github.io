@@ -30,10 +30,11 @@
        <h2><a href="https://www.ucl.ac.uk/">University College London </a></h2>
       </div>
   </p>   </p> </p>
-
+      <!--
       <iframe width="600" height="380" frameborder="0"
       src="https://www.youtube.com/embed/GkFoDoMC0rc?autoplay=1&mute=1">
       </iframe>
+      <!--
       <!--
       <div class="row_article">
         <div class="column"> <h2><a href="Resources/uda_sem_seg.pdf"> Paper </a></h2></div>
@@ -45,31 +46,28 @@
       <div class="img">
         <!-- img src="Resources/stoch_transl.png" width=800px height="auto" alt="pic"/> -->
         <!-- <img src="Resources/stoch_transl.gif" width=800px height="auto" alt="pic"/> -->
-        <!--
         <img src="Resources/stoch_transl.png" width=800px height="auto" alt=""/>
         <div class="caption">
           Unsupervised Domain Adaptation with stochastic translation: we rely on a content-style separation network to
-          associate a synthetic image from the (source) GTA5 dataset with a distribution of image translations to the target domain.
-          These translations preserve the content signal but drop the source-specific style Ss and instead adopt the appearance properties
-          of the (target) Cityscapes dataset through randomly sampled style codes, St. We use the resulting images to train a target domain
-          network tasked with predicting the labels of the respective source-domain image, irrespective of the style variation.
-          Stochasticity in UDA allows the translation networks to generate multiple, sharp outputs that better capture the diversity of
-          the scenes in the target domain, and train the target-domain network with a more representative set of images.
+          associate a synthetic image from the GTA5 dataset (source) with a distribution of image translations to the
+          target domain. These translations preserve the content signal and adopt the appearance properties of the
+          Cityscapes dataset (target) through randomly sampled style codes, St. We use the resulting images to train a
+          target-domain network tasked with predicting the labels of the respective source-domain image, irrespective of
+          the style variation. Stochasticity in UDA allows the translation networks to generate multiple, sharp outputs that
+          better capture the diversity of the scenes in the target domain, and train the target-domain network with a more
+          representative set of images.
         </div>
       </div>
-    -->
     </br></br>
     <h3>Abstract</h3>
-    <p>In this work we challenge the common approach of unsupervised domain adaptation (UDA) that relates a supervised source
-      and unsupervised target domain through a one-to-one mapping (‘translation’) between the domains. Instead, we rely on
-      stochastic translation to capture ambiguities that may be inherent in the relationship between the two domains.
-      This allows us to train more accurate target networks by generating multiple outputs conditioned on the same source
-      image, reaping the benefits of both accurate translation and data augmentation for appearance variability.
-      Additionally, it allows us to impute robust pseudolabels for the target data by averaging the predictions of a
-      source network on multiple translated versions of a single target image. Finally, it provides us with a simple mechanism
-      to train and ensemble diverse networks in the target domain by modulating the degree of stochasticity in the translations.
-      We show that our contributions yield improvements over strong recent baselines, leading to state-of-the-art UDA results on
-      two challenging semantic segmentation benchmarks.</p>
+    <p>In this work we challenge the common approach of using a one-to-one mapping (‘translation’) between the source and
+      target domains in unsupervised domain adaptation (UDA). Instead, we rely on stochastic translation to capture inherent
+      translation ambiguities. This allows us to (i) train more accurate target networks by generating multiple outputs
+      conditioned on the same source image, lever- aging both accurate translation and data augmentation for appearance
+      variability (ii) impute robust pseudo-labels for the target data by averaging the predictions of a source network o
+      n multiple translated versions of a single target image and (iii) train and ensemble diverse networks in the
+      target domain by modulating the degree of stochasticity in the translations. We report improvements over strong recent
+      baselines, leading to state-of-the-art UDA results on two challenging semantic segmentation benchmarks.</p>
 
       <h3>Material</h3>
       <div class="row_article">
